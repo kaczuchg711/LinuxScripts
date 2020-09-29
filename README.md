@@ -2,4 +2,4 @@
 Live better
 
 atp add folder To Path
-UU update and upgrad
+UU update and upgrade
