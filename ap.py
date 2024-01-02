@@ -3,7 +3,7 @@ import pathlib
 
 
 def _create_new_PATH_line(newSinglePath, i):
-    new_line = line[:-1] + ":" + newSinglePath
+    new_line = line[:] + ":" + newSinglePath
     lines[i] = new_line
     print("add " + newSinglePath + " to PATH")
 

@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# repeat_command.sh - A script to repeat a command a specified number of times
+
+COMMAND=$1     # The command to be executed, passed as the first argument
+COUNT=$2       # The number of times to repeat the command, passed as the second argument
+
+if [ -z "$COMMAND" ] || [ -z "$COUNT" ]; then
+    echo "Usage: $0 <command> <count>"
+    exit 1
+fi
+
+for i in $(seq 1 $COUNT); do
+    $COMMAND
+done
